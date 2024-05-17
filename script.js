@@ -9,15 +9,15 @@
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "05/11/",
-      earlyBirds = dayMonth + yyyy;
+      dayMonth = "07/18/",
+      campDay = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
-  if (today > earlyBirds) {
-    earlyBirds = dayMonth + nextYear;
+  if (today > campDay) {
+    campDay = dayMonth + nextYear;
   }
   
-  const countDown = new Date(earlyBirds).getTime(),
+  const countDown = new Date(campDay).getTime(),
       x = setInterval(function() {    
 
         const now = new Date().getTime(),
