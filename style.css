@@ -783,7 +783,7 @@ h2 {
 
   section,
 article {
-  scroll-margin-top: 25vh;
+  scroll-margin-top: 30vh;
 }
   .section__message--first {
     left: 0;
@@ -818,8 +818,8 @@ article {
   }
 
   .section__teacher {
-    height: 150vh;
-    margin-top: 35%;
+    height: 140vh;
+    margin-top: 30%;
     margin-bottom: 60%;
     position: relative;
     display: flex;
