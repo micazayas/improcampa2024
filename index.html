@@ -1,102 +1,319 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>⛺IMPRO CAMPA 2024</title>
-  <meta name="description" content="🎭ESIMPRO (Berlín), Experiencia Impro (Múnich) y Dodecahedro (Zúrich), unidas unidas en un evento excepcional.">
+  <title>⛺IMPRO CAMPA 2025</title>
+  <meta name="description"
+    content="🎭ESIMPRO (Berlín), Experiencia Impro (Múnich) y Dodecahedro (Zúrich), unidas unidas en un evento excepcional.">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-  <body>
-    <div class="sliderMain">
-      <div class="slider">
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-ei.svg" alt="experiencia impro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-dodecaedro.svg" alt="dodecaedro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-ei.svg" alt="experiencia impro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-dodecaedro.svg" alt="dodecaedro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-ei.svg" alt="experiencia impro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-dodecaedro.svg" alt="dodecaedro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-ei.svg" alt="experiencia impro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
+
+<body>
+  <nav class="navbar">
+    <div class="menu__desktop">
+      <div class="nav__links">
+        <a href="#home">home</a>
+        <a href="#info">info</a>
+        <a href="#profes">profes</a>
       </div>
-      <div class="slider">
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-dodecaedro.svg" alt="dodecaedro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-ei.svg" alt="experiencia impro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-dodecaedro.svg" alt="dodecaedro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-ei.svg" alt="experiencia impro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-dodecaedro.svg" alt="dodecaedro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-ei.svg" alt="experiencia impro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/logo-dodecaedro.svg" alt="dodecaedro"></div>
-        <div class="slider__logo"><img class="slider__img" src="multimedia/esimpro-logo.png" alt="esimpro"></div>
+      <div class="nav__links"><img src="multimedia/logo.svg" alt="" width="120px"></div>
+      <div class="nav__links">
+        <a href="#espiral">espiral</a>
+        <a href="#contacto">contacto </a>
+        <a href=https://goteamup.com/p/3640530-esimpro/e/83535279-improcampa-25-es/ target="_blank">comprar</a>
       </div>
+    </div>
+    <div><img src="multimedia/logo.svg" alt="" width="120px"></div>
+    <div class="menu__icon" onclick="toggleMenu()">MENU</div>
+    <div class="menu__mobile" id="menu-mobile">
+      <span class="menu__close--icon" onclick="toggleMenu()">✖</span>
+      <div class="nav__links">
+        <a href="#home" onclick="closeMenu()">home</a>
+        <a href="#info" onclick="closeMenu()">info</a>
+        <a href="#profes" onclick="closeMenu()">profes</a>
+        <a href="#espiral" onclick="closeMenu()">espiral</a>
+        <a href="#contacto" onclick="closeMenu()">contacto</a>
+        <a href=https://goteamup.com/p/3640530-esimpro/e/83535279-improcampa-25-es/ target="_blank"
+          onclick="closeMenu()">comprar</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section" id="eye">
+    <section id="home">
+      <div  class="section__header">
+        <div class="grid__aniversary">
+          <div class="grid__aniversary--ten"><span>10</span></div>
+          <div class="grid__aniversary--years"><span>años de</span></div>
+        </div>
+        <div class="grid__camp">
+          <div class="grid__camp--impro"><span>impro</span></div>
+          <div class="grid__camp--campa"><span>campa</span></div>
+        </div>
+      </div>
+    </section>
+    <div class="marquee">
+      <div class="marquee__black marquee-left-to-right">
+        <ul class="marquee__content">
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+          <li class="marquee__item"> 24 al 27 de julio-</li>
+        </ul>
+      </div>
+    </div>
+    <div class="marquee__orange marquee-right-to-left">
+      <ul class="marquee__content">
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+        <li class="marquee__item"> LANDHAUS, GRODEN-ALEMANIA- </li>
+      </ul>
     </div>
 
-    <section class="section" id="eye">
-      <div>
-        <img class="section__image" src="multimedia/impro-campa.svg" alt="impro campa 2024">
+    <section id="info" class="about">
+      <div class="section__about">
+        <div class="especial">
+          <div class="hello">Hola</div>
+          <div class="improv">impro</div>
+          <div class="campistas">campistas</div>
+        </div>
+        <div> Este año celebramos 10 años de ImproCampa✨.
+          Dos compañías de impro en español en Centroeuropa -ESIMPRO (Berlín) y Experiencia Impro (Múnich), nos uniremos
+          nuevamente para crear este espacio único de improvisación, creatividad y conexión.<br><br>Improvisamos,
+          jugamos y
+          exploramos la naturaleza mientras compartimos 24 horas de teatro, risas y crecimiento. Este año, además de los
+          talleres
+          diarios, contaremos con 4 workshops especiales y un show exclusivo de los profes ("Profis")
+          <br><br>🔥 No te pierdas esta edición especial. Ven desde el jueves y vive la experiencia completa. Nos vemos
+          en la gran
+          celebración de la improvisación.
+        </div>
       </div>
-      <div class="section__countdown" id="countdown"> 
+    </section>
+    <article>
+      <div class="section__countdown" id="countdown">
         <div class="section__info">
-          <h1 class="section__title">Nos vemos en:</h1>
-            <!-- <h2 class="section__subtitle">(hasta el 10/05/2024). <br>Todavía quedan:</h2> -->
-              <ul>
-                <li class="section__time"><span class="section__time--span" id="days"></span>Días</li>
-                <li class="section__time"><span class="section__time--span" id="hours"></span>Horas</li>
-                <li class="section__time"><span class="section__time--span" id="minutes"></span>Min</li>
-                <li class="section__time"><span class="section__time--span" id="seconds"></span>Seg</li>
-              </ul>
-      <div class="section__button">
-        <div>
-          <p class="section__text">18.7 al 21.07<a class="section__text--location" href="https://maps.app.goo.gl/kXGbEkWGAxJQU92B6" target="_blank"><p>📍Landhaus, Gröden-GE (mapa)</p></a>  </p>
-        <a href="https://goteamup.com/p/3640530-esimpro-escuela/e/71081884-improcampa2024-es/" target="_blank"><button class="button">comprar</button></a>
-        </div>
-        <div>
-          <p class="section__text">19.7 al 21.07<a class="section__text--location" href="https://maps.app.goo.gl/kXGbEkWGAxJQU92B6" target="_blank"><p>📍Landhaus, Gröden-GE (mapa)</p></a>  </p>
-        <a href="https://goteamup.com/p/3640530-esimpro-escuela/e/71081990-improcampa2024-es/" target="_blank"><button class="button">comprar</button></a>
+          <h2 class="section__title">Nos vemos en:</h2>
+          <ul>
+            <li class="section__time"><span class="section__time--span" id="days"></span>Días</li>
+            <li class="section__time"><span class="section__time--span" id="hours"></span>Hs</li>
+            <li class="section__time"><span class="section__time--span" id="minutes"></span>Min</li>
+            <li class="section__time"><span class="section__time--span" id="seconds"></span>Seg</li>
+          </ul>
         </div>
       </div>
+    </article>
+
+    <article class="section__info">
+      <h2 class="section__title">info general</h2>
+      <div class="section__button">
+
+      <div class="section__table section__text">
+        <div class="section__table--row">
+          <h3>PRECIO</h3>
+          <p>Early Bird (hasta el 15/04 inclusive): 340€</p>
+          <p>Desde el 16/04: 375€</p>
+        </div>
+        <div class="section__table--row">
+          <h3>LUGAR, FECHA Y HORARIO</h3>
+          <a href="https://maps.app.goo.gl/82Whd9k121AeiUkZ9" target="_blank">
+            <p>Landhaus Gröden (Alter Schachtweg 2, 04932 Gröden- Alemania).</p>
+          </a>
+          <p>Desde el 24 al 27 de Julio 2025.<br>(Comenzamos el jueves a las 2 pm y finalizamos el domingo a las 4 pm) </p>
+        </div>
+        <div class="section__table--row">
+          <h3>ALOJAMIENTO Y COMIDA</h3>
+          <p>El precio incluye 3 comidas al día (desayuno, almuerzo, cena) y habitación compartida.</p>
+        </div>
+        <div class="section__table--row">
+          <h3>WORKSHOPS Y SHOWS</h3>
+          <p>El precio incluye 4 workshops, actividades y todos los shows.</p>
+        </div>
+        <div class="section__table--row">
+          <h3>EXPERIENCIA</h3>
+          <p>No se requiere experiencia previa para asistir al campa.</p>
+        </div>
+        <div class="section__table--row">
+          <h3>TRANSPORTE</h3>
+          <p>El transporte hacia el campa NO está incluido en el precio.</p>
+        </div>
+      </div>
+      <div><a href="https://goteamup.com/p/3640530-esimpro/e/83535279-improcampa-25-es/" target="_blank">
+        <button class="button">comprar</button></a>
+      </div>
     </div>
-    </div>
+        <div class="section__message--first"><img class="section__message--picture" src="multimedia/firma.svg"
+              alt="Te invitamos a ver algunas fotos del año pasado."></div>
+        </div>
+      </div>
+    </article>
+
+    <section class="cont-carrusel">
+      <main id="items-carrusel">
+        <div class="item" data-index="1"></div>
+        <div class="item" data-index="2"></div>
+        <div class="item" data-index="3"></div>
+        <div class="item" data-index="4"></div>
+        <div class="item" data-index="5"></div>
+        <div class="item" data-index="6"></div>
+        <div class="item" data-index="7"></div>
+        <div class="item" data-index=""></div>
+      </main>
+      <div class="controles">
+        <button class="control" data-pos="1">1</button>
+        <button class="control" data-pos="2">2</button>
+        <button class="control" data-pos="3">3</button>
+        <button class="control" data-pos="4">4</button>
+        <button class="control" data-pos="5">5</button>
+        <button class="control" data-pos="6">6</button>
+        <button class="control" data-pos="7">7</button>
+        <button class="control" data-pos="8">8</button>
+      </div>
+    </section>
+    
+    <section id="profes">
+      <div class="section__teacher">
+        <h2 class="section__title">PROFES</h2>
+        <article>
+          <div class="section__teacher--1">
+            <div class="section__teacher--gallery">
+              <a><img class="section__teacher--picture" src="multimedia/gonza.png" alt="Gonzalo Piñan"></a>
+              <h2>Gonzalo Piñan🧔🏻<br>ESIMPR0</h2>
+            </div>
+          </div>
+          <div class="section__teacher--2">
+            <div class="section__teacher--gallery">
+              <a><img class="section__teacher--picture" src="multimedia/irena.jpg" alt="Irene Rujas"></a>
+              <h2>Irena Rujas<br>ESIMPR0</h2>
+            </div>
+          </div>
+          <div class="section__teacher--3">
+            <div class="section__teacher--gallery">
+              <a><img class="section__teacher--picture" src="multimedia/mati.jpeg" alt="Matias Degiuseppe"></a>
+              <h2>Mati Degiuseppe🧔🏻‍♂️<br>Experiencia Impro</h2>
+            </div>
+          </div>
+          <div class="section__teacher--4">
+            <div class="section__teacher--gallery">
+              <a><img class="section__teacher--picture" src="multimedia/sam.png" alt="Sam Gutierrez"></a>
+              <h2>Sam Gutierrez<br>Aulaimprobarcelona</h2>
+            </div>
+          </div>
+        </article>
     </section>
 
-  <footer>
-    <section class="ft__main">
-      <div class="info__column">
-        <div class="socialMedia">
-          <p class="info__column--list">Dodecaedro - Zúrich 👉 </p>
-          <div><a href="https://www.instagram.com/dodecaedro.impro.zh/" target="_blank"><i class="gg-instagram"></i></a></div> 
-        </div>
+    <div class="marquee">
+      <div class="marquee__black marquee-left-to-right">
+        <ul class="marquee__content">
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+          <li class="marquee__item"> LUZ, CAMARA, IMPRO-</li>
+        </ul>
       </div>
-      <div class="info__column">
-        <div class="socialMedia">
-          <p class="info__column--list">Esimpro - Berlin 👉 </p>
-          <div><a href="https://www.facebook.com/ESIMPRO/" target="_blank"><i class="gg-facebook icon"></i></a></div> 
-          <div><a href="https://www.instagram.com/berlin_es_impro/" target="_blank"><i class="gg-instagram"></i></a></div> 
-        </div>
+    </div>
+
+    <section id="espiral" class="section__paragraph">
+      <h2 class="section__title">ESPIRAL</h2>
+      <div class="section__message--second">
+        <img class="section__message--thanks" src="multimedia/gracias.svg"
+          alt="Gracias por llegar hasta acá, te invitamos a disfrutar del corto producido el año pasado.">
       </div>
-      <div class="info__column">
-        <div class="socialMedia">
-          <p class="info__column--list">Experiencia Impro - Múnich 👉 </p>
-          <div><a href="https://www.facebook.com/impro.experiencia/" target="_blank"><i class="gg-facebook icon"></i></a></div> 
-          <div><a href="https://www.instagram.com/experienciaimpro/" target="_blank"><i class="gg-instagram"></i></a></div> 
-        </div>
+      <iframe class="section__video" src="https://www.youtube.com/embed/Sojmp7HhvAY?si=z1kxTKzYkdAgFayF"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="movie section__text">
+        Todos los veranos se organiza un campamento de improvisación en Centro Europa, al que van hispanohablantes de
+        todas partes del mundo.<br>Felipe es periodista y para ganar confianza en su trabajo se apunta al campamento de
+        improvisación. Allí conocerá a gente entusiasmada con la impro, lo que de verdad no espera es que también se va
+        a encontrar con un desafío mucho mayor.
+      </p>
+    </section>
+    </div>
+
+    <!-- PARTICLE SYSTEM -->
+    <div class="page-bg">
+      <div class="animation-wrapper">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
       </div>
-    </section> 
+    </div>
+  </section>
+
+  <footer class="footer">
+      <div class="footer__logos">
+        <p>Organizadores:</p>
+        <a href="https://www.instagram.com/berlin_es_impro/" target="_blank"><img class="footer__logos--picture" src="multimedia/esimpro-logo.png"
+            alt="Logo esimpro."></a>
+        <a href="https://www.instagram.com/experienciaimpro/" target="_blank"><img class="footer__logos--picture" src="multimedia/logo-ei.svg"
+            alt="Logo experiencia impro."></a>
+      </div>
+      <div id="contacto">
+        <p>Contacto: <a href="#" id="safeEmail" class="email-link">experienciaimpro@gmail.com</a></p>
+      </div>
+      <div class="autor">
+        <p>Made with💙by Mica Zayas</p>
+      </div>
   </footer>
   <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
 
 

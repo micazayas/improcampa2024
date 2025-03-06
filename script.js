@@ -9,7 +9,7 @@
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "07/18/",
+      dayMonth = "07/24/",
       campDay = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
@@ -43,4 +43,106 @@ function App() {
 }
 App();
 
+function toggleMenu() {
+  var menu = document.getElementById("menu-mobile");
+  menu.classList.toggle("open");
+}
 
+function closeMenu() {
+  var menu = document.getElementById("menu-mobile");
+  menu.classList.remove("open");
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  let currentIndex = 1;
+  const items = document.querySelectorAll(".item");
+  const totalItems = items.length;
+  let startX = 0;
+  let isDragging = false;
+
+  function showItem(index) {
+    if (index > totalItems) {
+      index = 1;
+    } else if (index < 1) {
+      index = totalItems; 
+    }
+
+    items.forEach((item, i) => {
+      item.style.transform = `translateX(${(i + 1 - index) * 600}px)`;
+      item.style.opacity = i + 1 === index ? "1" : "1";
+    });
+    currentIndex = index;
+  }
+
+  document.querySelectorAll(".control").forEach((button) => {
+    button.addEventListener("click", () => {
+      const pos = parseInt(button.getAttribute("data-pos"));
+      showItem(pos);
+    });
+  });
+
+  document.querySelectorAll(".item").forEach((item) => {
+    item.addEventListener("click", () => {
+      let nextIndex = currentIndex + 1;
+      showItem(nextIndex);
+    });
+
+    item.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    item.addEventListener("touchend", (e) => {
+      let endX = e.changedTouches[0].clientX;
+      if (startX > endX + 50) {
+        let nextIndex = currentIndex + 1;
+        showItem(nextIndex);
+      } else if (startX < endX - 50) {
+        let prevIndex = currentIndex - 1;
+        showItem(prevIndex);
+      }
+    });
+  });
+
+  document.querySelector("#items-carrusel").addEventListener("mousedown", (e) => {
+    isDragging = true;
+    startX = e.clientX;
+  });
+
+  document.addEventListener("mouseup", (e) => {
+    if (!isDragging) return;
+    isDragging = false;
+    let endX = e.clientX;
+    if (startX > endX + 50) {
+      let nextIndex = currentIndex + 1;
+      showItem(nextIndex);
+    } else if (startX < endX - 50) {
+      let prevIndex = currentIndex - 1;
+      showItem(prevIndex);
+    }
+  });
+
+  showItem(currentIndex);
+});
+
+document.getElementById("safeEmail").addEventListener("click", function (event) {
+  event.preventDefault();
+
+  let encodedUser = ["e", "x", "p", "e", "r", "i", "e", "n", "c", "i", "a", "i", "m", "p", "r", "o"];
+  let encodedDomain = ["g", "m", "a", "i", "l", ".", "c", "o", "m"];
+  let user = encodedUser.join("");
+  let domain = encodedDomain.join("");
+  let email = user + "@" + domain;
+  let mailtoLink = "mailto:" + email;
+  window.location.href = mailtoLink;
+
+  setTimeout(() => {
+    if (!document.hasFocus()) return;
+    let choice = confirm("¿Hola improcampista, quieres abrir Gmail?\n\nSi usas Outlook (Hotmail), presiona 'Cancelar'.");
+    if (choice) {
+      window.open("https://mail.google.com/mail/?view=cm&fs=1&to=" + email, "_blank");
+    } else {
+      window.open("https://outlook.live.com/owa/?path=/mail/action/compose&to=" + email, "_blank");
+    }
+  }, 1000);
+});
