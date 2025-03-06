@@ -776,7 +776,7 @@ h2 {
   }
   .controles {
     margin-top: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 }
 
@@ -784,7 +784,7 @@ h2 {
 
   section,
 article {
-  scroll-margin-top: 40vh;
+  scroll-margin-top: 30vh;
 }
   .section__message--first {
     left: 0;
