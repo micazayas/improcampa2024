@@ -780,6 +780,11 @@ h2 {
 }
 
 @media (max-width: 768px) {
+
+  section,
+article {
+  scroll-margin-top: 25vh;
+}
   .section__message--first {
     left: 0;
     margin-bottom: -15%;
