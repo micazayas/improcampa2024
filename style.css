@@ -782,8 +782,7 @@ h2 {
 
 @media (max-width: 768px) {
 
-  section,
-article {
+section.teacher {
   scroll-margin-top: 30vh;
 }
   .section__message--first {
