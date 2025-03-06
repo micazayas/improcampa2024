@@ -774,6 +774,9 @@ h2 {
     left: 0;
     margin-bottom: -15%;
   }
+  .control {
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 768px) {
