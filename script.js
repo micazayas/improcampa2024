@@ -61,20 +61,22 @@ document.addEventListener("DOMContentLoaded", () => {
   let startX = 0;
   let isDragging = false;
 
-  function showItem(index) {
-    if (index > totalItems) {
-      index = 1;
-    } else if (index < 1) {
-      index = totalItems; 
-    }
+function showItem(index) {
+    if (index > totalItems) index = 1;
+    if (index < 1) index = totalItems;
 
     items.forEach((item, i) => {
-      item.style.transform = `translateX(${(i + 1 - index) * 600}px)`;
-      item.style.opacity = i + 1 === index ? "1" : "1";
+        let rotation = item.getAttribute("data-rotate") || "0";
+        item.style.transition = "transform 0.5s ease-in-out";
+        item.style.transform = `translateX(${(i + 1 - index) * 600}px) rotate(${rotation}deg)`;
+        item.style.animation = "none";
+        setTimeout(() => {
+            item.style.animation = "wobble 3s infinite ease-in-out";
+        }, 500);
     });
-    currentIndex = index;
-  }
 
+    currentIndex = index;
+}
   document.querySelectorAll(".control").forEach((button) => {
     button.addEventListener("click", () => {
       const pos = parseInt(button.getAttribute("data-pos"));

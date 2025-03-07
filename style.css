@@ -191,7 +191,7 @@ article {
   max-width: 100%;
   width: 100%;
   font-size: 100px;
-  color: var(--white-color);
+  color: var(--orange-color);
   text-transform: uppercase;
   font-family: "Londrina Solid", serif;
   font-weight: 900;
@@ -545,7 +545,7 @@ main#items-carrusel {
 }
 
 .item {
-  width: 500px;
+  width: 550px;
   height: 400px;
   background-color: var(--orange-color);
   text-align: center;
@@ -558,51 +558,42 @@ main#items-carrusel {
 .item:nth-of-type(1) {
   background-image: url(multimedia/11.jpeg);
   background-size: cover;
-  transform: rotate(30deg);
 }
 
 .item:nth-of-type(2) {
   background-image: url(multimedia/2.jpeg);
   background-size: cover;
-  transform: rotate(-5deg);
 }
 
 .item:nth-of-type(3) {
   background-image: url(multimedia/6.jpeg);
   background-size: cover;
-  transform: rotate(4deg);
 }
 
 .item:nth-of-type(4) {
   background-image: url(multimedia/4.jpeg);
   background-size: cover;
-  transform: rotate(-3deg);
 }
 
 .item:nth-of-type(5) {
   background-image: url(multimedia/13.jpeg);
   background-size: cover;
-  transform: rotate(2deg);
 }
 
 .item:nth-of-type(6) {
   background-image: url(multimedia/5.jpeg);
   background-size: cover;
-  transform: rotate(-2deg);
 }
 
 .item:nth-of-type(7) {
   background-image: url(multimedia/7.jpeg);
   background-size: cover;
-  transform: rotate(1deg);
 }
 
 .item:nth-of-type(8) {
   background-image: url(multimedia/8.jpeg);
   background-size: cover;
-  transform: rotate(1deg);
 }
-
 
 h1,
 h2 {
@@ -652,7 +643,7 @@ h2 {
   position: absolute;
   top: 0%;
   left: 10%;
-  z-index: 3;
+  z-index: -1;
   transform: rotate(-17deg);
   transition: 1s all;
 }
@@ -661,7 +652,7 @@ h2 {
   position: absolute;
   top: 55%;
   left: 10%;
-  z-index: 1;
+  z-index: -3;
   transform: rotate(10deg);
   transition: 1s all;
 }
@@ -670,7 +661,7 @@ h2 {
   position: absolute;
   top: 0%;
   left: 70%;
-  z-index: 5;
+  z-index: -2;
   transform: rotate(16deg);
   transition: 1s all;
 }
@@ -679,7 +670,7 @@ h2 {
   position: absolute;
   top: 50%;
   left: 70%;
-  z-index: 4;
+  z-index: -4;
   transform: rotate(-20deg);
   transition: 1s all;
 }
@@ -774,9 +765,32 @@ h2 {
     left: 0;
     margin-bottom: -15%;
   }
+  
   .controles {
     margin-top: 25px;
     margin-bottom: 50px;
+  }
+  
+  .item {
+    width: 380px;
+    height: 280px;
+  }
+  
+  main#items-carrusel {
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .hello {
+    font-size:150px;
+    margin-top: 50px;
+  }
+  .improv {
+    font-size:120px;
+  }
+  .campistas {
+    font-size:70px;
   }
 }
 
@@ -796,6 +810,17 @@ section.teacher {
 
   .section__title {
     font-size: 70px;
+  }
+
+  .hello {
+    font-size:150px;
+    margin-top: 35px;
+  }
+  .improv {
+    font-size:120px;
+  }
+  .campistas {
+    font-size:70px;
   }
 
   .section__message--picture {
