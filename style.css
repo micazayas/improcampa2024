@@ -556,42 +556,42 @@ main#items-carrusel {
 }
 
 .item:nth-of-type(1) {
-  background-image: url(multimedia/11.jpeg);
+  background-image: url(multimedia/improcampa-1.webp);
   background-size: cover;
 }
 
 .item:nth-of-type(2) {
-  background-image: url(multimedia/2.jpeg);
+  background-image: url(multimedia/improcampa-2.webp);
   background-size: cover;
 }
 
 .item:nth-of-type(3) {
-  background-image: url(multimedia/6.jpeg);
+  background-image: url(multimedia/improcampa-3.webp);
   background-size: cover;
 }
 
 .item:nth-of-type(4) {
-  background-image: url(multimedia/4.jpeg);
+  background-image: url(multimedia/improcampa-4.webp);
   background-size: cover;
 }
 
 .item:nth-of-type(5) {
-  background-image: url(multimedia/13.jpeg);
+  background-image: url(multimedia/improcampa-5.webp);
   background-size: cover;
 }
 
 .item:nth-of-type(6) {
-  background-image: url(multimedia/5.jpeg);
+  background-image: url(multimedia/improcampa-6.webp);
   background-size: cover;
 }
 
 .item:nth-of-type(7) {
-  background-image: url(multimedia/7.jpeg);
+  background-image: url(multimedia/improcampa-7.webp);
   background-size: cover;
 }
 
 .item:nth-of-type(8) {
-  background-image: url(multimedia/8.jpeg);
+  background-image: url(multimedia/improcampa-8.webp);
   background-size: cover;
 }
 

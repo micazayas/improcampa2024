@@ -130,8 +130,8 @@ function showItem(index) {
 document.getElementById("safeEmail").addEventListener("click", function (event) {
   event.preventDefault();
 
-  let encodedUser = ["e", "x", "p", "e", "r", "i", "e", "n", "c", "i", "a", "i", "m", "p", "r", "o"];
-  let encodedDomain = ["g", "m", "a", "i", "l", ".", "c", "o", "m"];
+  let encodedUser = ["e", "s", "c", "u", "e", "l", "a"];
+  let encodedDomain = ["b", "e", "r", "l", "i", "n", "e", "s", "i", "m", "p", "r", "o", ".", "c", "o", "m"];
   let user = encodedUser.join("");
   let domain = encodedDomain.join("");
   let email = user + "@" + domain;
