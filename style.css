@@ -435,12 +435,11 @@ ul {
 .section__table {
   display: flex;
   flex-direction: column;
-
   border: 3px solid var(--white-color);
   background-color: var(--ligthblue-color);
   padding: 0% !important;
   box-shadow: 8px 8px 0 var(--white-color);
-  margin-bottom: 2%;
+  margin-bottom: 6.5%;
 }
 
 .section__table--row {
@@ -452,6 +451,20 @@ ul {
 
 .section__table--row:last-child {
   border-bottom: none;
+}
+
+.cronograma{
+  background: none;
+  border: none;
+  color: var(--blue-color);
+  font-family: "Figtree", serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cronograma:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
 }
 
 .section__button{
@@ -467,13 +480,14 @@ ul {
   cursor: pointer;
   margin: 0.5rem;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.6rem;
   transition: 0.3s;
   font-weight: 800;
   width: 300px;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: "Londrina Solid", serif;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -533,7 +547,7 @@ ul {
   margin-bottom: 25%;
 }
 
-main#items-carrusel {
+div#items-carrusel {
   width: 100vw;
   height: 60vh;
   display: flex;
@@ -595,16 +609,8 @@ main#items-carrusel {
   background-size: cover;
 }
 
-h1,
 h2 {
   text-align: center;
-}
-
-h1 {
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 80px;
-  font-family: "Grape Nuts", serif;
 }
 
 h2 {
@@ -776,7 +782,7 @@ h2 {
     height: 280px;
   }
   
-  main#items-carrusel {
+  div#items-carrusel {
     width: 100vw;
     height: 50vh;
     align-items: center;

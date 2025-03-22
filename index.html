@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>⛺IMPRO CAMPA 2025</title>
   <meta name="description"
     content="🎭ESIMPRO (Berlín) y Experiencia Impro (Múnich)unidas en un evento excepcional.">
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -18,14 +17,14 @@
         <a href="#info">info</a>
         <a href="#profes">profes</a>
       </div>
-      <div class="nav__links"><img src="multimedia/logo-improcampa.svg" alt="" width="120px"></div>
+      <div class="nav__links"><img src="multimedia/logo-improcampa.svg" alt="logo impro campa" width="120"></div>
       <div class="nav__links">
         <a href="#espiral">espiral</a>
         <a href="#contacto">contacto </a>
         <a href=https://goteamup.com/p/3640530-esimpro/e/83535279-improcampa-25-es/ target="_blank">comprar</a>
       </div>
     </div>
-    <div><img src="multimedia/logo-improcampa.svg" alt="" width="120px"></div>
+    <div><img src="multimedia/logo-improcampa.svg" alt="logo impro campa" width="120"></div>
     <div class="menu__icon" onclick="toggleMenu()">MENU</div>
     <div class="menu__mobile" id="menu-mobile">
       <span class="menu__close--icon" onclick="toggleMenu()">✖</span>
@@ -43,16 +42,16 @@
 
   <section class="section" id="eye">
     <section id="home">
-      <div  class="section__header">
-        <div class="grid__aniversary">
-          <div class="grid__aniversary--ten"><span>10</span></div>
-          <div class="grid__aniversary--years"><span>años de</span></div>
-        </div>
-        <div class="grid__camp">
-          <div class="grid__camp--impro"><span>impro</span></div>
-          <div class="grid__camp--campa"><span>campa</span></div>
-        </div>
-      </div>
+      <h1 class="section__header">
+        <span class="grid__aniversary">
+          <span class="grid__aniversary--ten">10</span>
+          <span class="grid__aniversary--years">años de</span>
+        </span>
+        <span class="grid__camp">
+          <span class="grid__camp--impro">impro</span>
+          <span class="grid__camp--campa">campa</span>
+        </span>
+      </h1>
     </section>
     <div class="marquee">
       <div class="marquee__black marquee-left-to-right">
@@ -175,19 +174,22 @@
           <h3>TRANSPORTE</h3>
           <p>El transporte hacia el campa NO está incluido en el precio.</p>
         </div>
+        <div class="section__table--row">
+          <h3>CRONOGRAMA</h3>
+          <button class="cronograma" id="downloadBtn">Click aquí para descargar el cronograma completo del evento.</button>
+        </div>
       </div>
-      <div><a href="https://goteamup.com/p/3640530-esimpro/e/83535279-improcampa-25-es/" target="_blank">
-        <button class="button">comprar</button></a>
+      <div><a class="button" href="https://goteamup.com/p/3640530-esimpro/e/83535279-improcampa-25-es/" target="_blank">comprar</a>
       </div>
     </div>
         <div class="section__message--first"><img class="section__message--picture" src="multimedia/come-on.svg"
-              alt="Te invitamos a ver algunas fotos del año pasado."></div>
-        </div>
-      </div>
+              alt="Te invitamos a ver algunas fotos del año pasado.">
+          </div>
+
     </article>
 
     <section class="cont-carrusel">
-      <main id="items-carrusel">
+      <div id="items-carrusel">
         <div class="item" data-rotate="5" data-index="1"></div>
         <div class="item" data-rotate="-6" data-index="2"></div>
         <div class="item" data-rotate="7" data-index="3"></div>
@@ -196,7 +198,7 @@
         <div class="item" data-rotate="-5" data-index="6"></div>
         <div class="item" data-rotate="6" data-index="7"></div>
         <div class="item" data-rotate="-7" data-index=""></div>
-      </main>
+      </div>
       <div class="controles">
         <button class="control" data-pos="1">1</button>
         <button class="control" data-pos="2">2</button>
@@ -216,28 +218,29 @@
           <div class="section__teacher--1">
             <div class="section__teacher--gallery">
               <a><img class="section__teacher--picture" src="multimedia/gonzalo-pinan.webp" alt="Gonzalo Piñan"></a>
-              <h2>Gonzalo Piñán🧔🏻<br>ESIMPR0</h2>
+              <h3>Gonzalo Piñán🧔🏻<br>ESIMPRO</h3>
             </div>
           </div>
           <div class="section__teacher--2">
             <div class="section__teacher--gallery">
               <a><img class="section__teacher--picture" src="multimedia/irene-rujas.webp" alt="Irene Rujas"></a>
-              <h2>Irena Rujas👩‍🦰<br>ESIMPR0</h2>
+              <h3>Irena Rujas👩‍🦰<br>ESIMPRO</h3>
             </div>
           </div>
           <div class="section__teacher--3">
             <div class="section__teacher--gallery">
               <a><img class="section__teacher--picture" src="multimedia/mati-degiuseppe.webp" alt="Matias Degiuseppe"></a>
-              <h2>Mati Degiuseppe🧔🏻‍♂️<br>Experiencia Impro</h2>
+              <h3>Mati Degiuseppe🧔🏻‍♂️<br>Experiencia Impro</h3>
             </div>
           </div>
           <div class="section__teacher--4">
             <div class="section__teacher--gallery">
               <a><img class="section__teacher--picture" src="multimedia/sam-gutierrez.webp" alt="Sam Gutierrez"></a>
-              <h2>Sam Gutierrez👩🏻<br>Aulaimprobarcelona</h2>
+              <h3>Sam Gutierrez👩🏻<br>Aulaimprobarcelona</h3>
             </div>
           </div>
         </article>
+      </div>
     </section>
 
     <div class="marquee">
@@ -274,7 +277,7 @@
           alt="Gracias por llegar hasta acá, te invitamos a disfrutar del corto producido el año pasado.">
       </div>
       <iframe class="section__video" src="https://www.youtube.com/embed/Sojmp7HhvAY?si=z1kxTKzYkdAgFayF"
-        title="YouTube video player" frameborder="0"
+        title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p class="movie section__text">
@@ -284,7 +287,7 @@
         a encontrar con un desafío mucho mayor.
       </p>
     </section>
-    </div>
+
 
     <!-- PARTICLE SYSTEM -->
     <div class="page-bg">

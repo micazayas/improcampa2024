@@ -53,6 +53,13 @@ function closeMenu() {
   menu.classList.remove("open");
 }
 
+document.getElementById('downloadBtn').addEventListener('click', function() {
+  const link = document.createElement('a');
+  link.href = './assets/cronograma.pdf'; 
+  link.download = 'cronograma.pdf'; 
+  link.click();
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
   let currentIndex = 1;
