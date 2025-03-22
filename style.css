@@ -645,6 +645,11 @@ h2 {
   width: 180px;
 }
 
+.section__teacher--title {
+  font-size: 22px;
+  font-family: "Grape Nuts", serif;
+}
+
 .section__teacher--1 {
   position: absolute;
   top: 0%;
