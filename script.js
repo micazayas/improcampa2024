@@ -162,12 +162,10 @@ document.querySelectorAll('.accordion__header').forEach(header => {
     const icon = header.querySelector('.icon');
     const isActive = item.classList.contains('active');
 
-    document.querySelectorAll('.accordion__item').forEach(i => {
-      i.classList.remove('active');
-      i.querySelector('.icon').textContent = '+';
-    });
-
-    if (!isActive) {
+    if (isActive) {
+      item.classList.remove('active');
+      icon.textContent = '+';
+    } else {
       item.classList.add('active');
       icon.textContent = '−';
     }

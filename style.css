@@ -381,6 +381,7 @@ article {
   font-size: 1.5rem;
   font-weight: 400;
   font-family: "Paytone One", sans-serif;
+  margin-bottom: 5%;
 }
 
 .section__info {
@@ -439,7 +440,7 @@ ul {
   background-color: var(--ligthblue-color);
   padding: 0% !important;
   box-shadow: 6px 6px 0 var(--white-color);
-  margin-bottom: 6.5%;
+  margin-bottom: 10%;
 }
 
 .section__table--row {
@@ -1147,6 +1148,7 @@ section.teacher {
   }
   .accordion {
     width: 80vw;
+      margin-bottom: 15%;
   }
 }
 
